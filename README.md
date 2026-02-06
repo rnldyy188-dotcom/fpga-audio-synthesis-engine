@@ -4,7 +4,8 @@ FPGA-based interactive audio synthesis engine supporting live note generation, a
 
 ## Overview
 
-This project demonstrates modular digital system design using Verilog, combining memory architecture, real-time scheduling, and hardware audio waveform generation on FPGA.
+This project was developed as a personal exploration of modular digital system design using Verilog, combining memory architecture, real-time scheduling, and hardware audio waveform generation on FPGA.
+
 
 ## Hardware Platform
 
