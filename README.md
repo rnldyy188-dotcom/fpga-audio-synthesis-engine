@@ -2,15 +2,11 @@
 
 FPGA-based interactive audio synthesis engine supporting live note generation, arpeggio scheduling, and compressed music playback using BRAM-backed storage.
 
----
-
-##  Overview
+## Overview
 
 This project demonstrates modular digital system design using Verilog, combining memory architecture, real-time scheduling, and hardware audio waveform generation on FPGA.
 
----
-
-##  Hardware Platform
+## Hardware Platform
 
 - **FPGA Board:** Digilent Basys-3  
 - **FPGA Device:** Xilinx Artix-7 (XC7A35T)  
@@ -18,9 +14,7 @@ This project demonstrates modular digital system design using Verilog, combining
 - **Audio Output:** PWM-driven passive buzzer  
 - **User Inputs:** On-board switches and buttons  
 
----
-
-##  Software Toolchain
+## Software Toolchain
 
 The project includes a Python-based preprocessing tool that converts MIDI files into FPGA-compatible playback memory.
 
@@ -35,47 +29,35 @@ The project includes a Python-based preprocessing tool that converts MIDI files 
 - Python 3.x  
 - `mido` library  
 
----
+## Features
 
-##  Features
-
-###  Live Note Generation
+### Live Note Generation
 - Real-time note generation from hardware switch inputs  
 - Low-latency square-wave tone synthesis  
 - Frequency divider-based waveform generation  
 
----
-
-###  Arpeggio Scheduling
+### Arpeggio Scheduling
 - Round-robin multi-key scheduling  
 - Time-sliced playback for simultaneous key presses  
 - Adjustable scheduling resolution  
 
----
-
-###  BRAM-backed Compressed Recording
+### BRAM-backed Compressed Recording
 - Run-Length Encoding (RLE) compression for recorded note streams  
 - Efficient FPGA Block RAM utilization  
 - Reduced storage requirements for recorded sequences  
 
----
-
-###  Playback Engine
+### Playback Engine
 - Restartable playback controller  
 - Looping playback support  
 - FSM-based playback scheduling  
 
----
-
-###  Song Playback Mode
+### Song Playback Mode
 - ROM-based preloaded song playback  
 - Encoded note duration and frequency format  
 - Supports rest notes and end-of-sequence commands  
 - Compatible with MIDI-to-memory conversion pipeline  
 
----
-
-###  Envelope Shaping
+### Envelope Shaping
 - Attack and Release envelope control  
 - Smooth audio transitions  
 - Reduced clicking artifacts during note changes  
