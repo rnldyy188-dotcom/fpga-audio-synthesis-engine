@@ -53,7 +53,8 @@ The project includes a Python-based preprocessing tool that converts MIDI files 
 ### Playback Engine
 - Restartable playback controller  
 - Looping playback support  
-- FSM-based playback scheduling  
+- FSM-based playback scheduling
+- Reliable user control via synchronized and debounced push-button inputs
 
 ### Song Playback Mode
 - ROM-based preloaded song playback  
