@@ -48,13 +48,13 @@ The project includes a Python-based preprocessing tool that converts MIDI files 
 ### BRAM-backed Compressed Recording
 - Run-Length Encoding (RLE) compression for recorded note streams  
 - Efficient FPGA Block RAM utilization  
-- Reduced storage requirements for recorded sequences  
+- Reduced storage requirements for recorded sequences
+- Reliable user control via synchronized and debounced push-button inputs
 
 ### Playback Engine
 - Restartable playback controller  
 - Looping playback support  
 - FSM-based playback scheduling
-- Reliable user control via synchronized and debounced push-button inputs
 
 ### Song Playback Mode
 - ROM-based preloaded song playback  
